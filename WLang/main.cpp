@@ -1,11 +1,15 @@
 #include "WLang.h"
+#include <iostream>
+using namespace std;
 
 int main() {
 
-    println("Hola\n");
-    string nombre = upper(read("Introduce tu nombre: "));
+    int numero = input("Introduce un numero entero: ");
 
-    print(nombre);
+    adrian(numero);
 
     return 0;
 }
+
+
+

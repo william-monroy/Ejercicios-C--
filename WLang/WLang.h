@@ -75,52 +75,84 @@ string lower(string cadena)
     return cadena;
 }
 
-void println(string dato)
+void adrianln(string dato)
 {
     cout << dato << endl;
 }
 
-void print(string dato)
+void adrian(string dato)
 {
     cout << dato;
 }
 
-void println(int dato)
+void adrianln(int dato)
 {
     cout << dato << endl;
 }
 
-void print(int dato)
+void adrian(int dato)
 {
     cout << dato;
 }
 
-void println(double dato)
+void adrianln(double dato)
 {
     cout << dato << endl;
 }
 
-void print(double dato)
+void adrian(double dato)
 {
     cout << dato;
 }
 
-void println(float dato)
+void adrianln(float dato)
 {
     cout << dato << endl;
 }
 
-void print(float dato)
+void adrian(float dato)
 {
     cout << dato;
 }
 
-void println(char dato)
+void adrianln(char dato)
 {
     cout << dato << endl;
 }
 
-void print(char dato)
+void adrian(char dato)
 {
     cout << dato;
+}
+
+
+
+
+//                     3            3
+double arturo(double base, double expo)
+{
+    if(expo==0){
+        return 1;
+    }
+    else{
+        double guardar = 0;
+        for (int i = 1; i < expo; i = i + 1)
+        {
+            if(i==1){
+                guardar=base*base;
+            }else{
+                guardar = guardar*base;
+            }
+        }
+        return guardar;
+    }
+
+}
+
+
+int input(string texto){
+    int numero;
+    cout << texto;
+    cin >> numero;
+    return numero;
 }
